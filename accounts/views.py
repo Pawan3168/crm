@@ -4,10 +4,10 @@ from django.http import HttpResponse
 
 
 def home(request):
-    return HttpResponse('home')
+    return render(request, 'accounts/dashboard.html')
 
-def products(requet):
-    return HttpResponse('products')
+def products(request):
+    return render(request, 'accounts/products.html')
 
 def customer(request):
-    return HttpResponse('Customer')
+    return render(request,'accounts/customer.html')
